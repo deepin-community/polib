@@ -1,0 +1,30 @@
+Description: Remove data from external website in docs
+Author: Angel Abad <angel@debian.org>
+Forwarded: no
+Last-Updated: 2016-12-08
+
+--- a/docs/index.rst
++++ b/docs/index.rst
+@@ -3,22 +3,6 @@
+ Welcome to polib's documentation!
+ =================================
+ 
+-.. image:: https://pypip.in/download/polib/badge.png
+-    :target: https://pypi.python.org/pypi/polib/
+-    :alt: Downloads
+-
+-.. image:: https://pypip.in/py_versions/polib/badge.png
+-    :target: https://pypi.python.org/pypi/polib/
+-    :alt: Supported Python versions
+-
+-.. image:: https://pypip.in/status/polib/badge.png
+-    :target: https://pypi.python.org/pypi/polib/
+-    :alt: Development Status
+-
+-.. image:: https://pypip.in/license/polib/badge.png
+-    :target: https://pypi.python.org/pypi/polib/
+-    :alt: License
+-
+ This documentation covers the latest release of polib.
+ 
+ polib is a library to manipulate, create, modify gettext files (pot, po and mo

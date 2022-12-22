@@ -1,0 +1,287 @@
+polib (1.1.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Angel Abad ]
+  * New upstream version 1.1.1
+  * debian/upstream/metadata: Update upstream urls
+  * debian/copyright: Update copyright years
+  * Bump debhelper-compat to 13
+  * Bump standards version to 4.5.1 (no changes required)
+
+ -- Angel Abad <angel@debian.org>  Sun, 22 Aug 2021 10:28:27 +0200
+
+polib (1.1.0-7) unstable; urgency=medium
+
+  * Add salsa ci configuration file
+  * debian/rules: Use execute_after_ instead of override_
+  * debian/control: Set Rules-Requires-Root: no
+  * Bump standards version to 4.5.0 (no changes required)
+
+ -- Angel Abad <angel@debian.org>  Mon, 17 Feb 2020 08:03:51 +0100
+
+polib (1.1.0-6) unstable; urgency=medium
+
+  * debian/control: Suggests python-polib-doc
+
+ -- Angel Abad <angel@debian.org>  Wed, 11 Sep 2019 08:41:55 +0200
+
+polib (1.1.0-5) unstable; urgency=medium
+
+  * Rename binary python3-polib-doc to python-polib-doc again, sorry!
+
+ -- Angel Abad <angel@debian.org>  Thu, 05 Sep 2019 13:14:30 +0200
+
+polib (1.1.0-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Use 'python3 -m sphinx' instead of sphinx-build for building docs
+
+  [ Angel Abad ]
+  * Remove polib python 2 module (Closes: #937308)
+  * Rename binary python-polib-doc to python3-polib-doc
+  * debian/patches/use_python3_for_tests: Use python3 in tests
+  * debian/rules: Check DEB_BUILD_OPTIONS against nocheck on tests
+  * Bump debhelper-compat to 12
+  * Declare compatibility with Debian Policy 4.4.0
+  * debian/watch: use uscan version 4
+
+ -- Angel Abad <angel@debian.org>  Sat, 31 Aug 2019 12:35:08 +0200
+
+polib (1.1.0-3) unstable; urgency=medium
+
+  * debian/control:
+    - Fix spelling error
+    - Mark python-polib-doc as Multi-Arch foreign
+  * Bump Standards-Version to 4.1.2 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Fri, 08 Dec 2017 12:38:28 +0100
+
+polib (1.1.0-2) unstable; urgency=medium
+
+  * debian/control: Add python autopkg tests
+
+ -- Angel Abad <angel@debian.org>  Thu, 30 Nov 2017 10:11:21 +0100
+
+polib (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0 (Closes: #873163)
+  * Remove trailing whitespaces
+  * debian/control: Build depends on python3-sphinx
+  * debian/copyright: Update copyright years
+  * debian/watch: Use secure url
+  * Bump Debhelper compat level to 10
+  * Declare compliance with Debian Policy 4.1.1
+
+ -- Angel Abad <angel@debian.org>  Wed, 29 Nov 2017 11:05:49 +0100
+
+polib (1.0.8-1) unstable; urgency=medium
+
+  * New upstream version 1.0.8
+  * debian/copyright:
+    - Change Copyright-Format 1.0 URL to HTTPS.
+    - Change license name, MIT to Expat.
+  * debian/control:
+    - Remove versions from Build-Depends.
+    - Use HTTPS transport protocol for Vcs-Git URI.
+    - Remove extra spaces in descriptions.
+  * Declare compliance with Debian Policy 3.9.8.
+  * debian/patches/remove_external_data: Remove data from external
+    website in docs.
+  * Add debian/upstream/metadata.
+
+ -- Angel Abad <angel@debian.org>  Thu, 08 Dec 2016 19:44:16 +0100
+
+polib (1.0.7-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.7
+  * debian/control: Build-Depends on dh-python
+  * debian/rules: Force package python tests
+
+ -- Angel Abad <angel@debian.org>  Wed, 22 Jul 2015 12:42:29 +0200
+
+polib (1.0.6-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.6
+  * debian/watch: Update file, now uses pypi.debian.net
+  * debian/patches/01_remove_unicode_error_files: Remove patch, applied
+    upstream
+  * Bump debhelper compat level to 9
+  * Declare compliance with Debian Policy 3.9.6
+  * debian/control:
+    - Build-Depends on python-setuptools and python3-setuptools
+    - Adjust python-sphinx version
+    - Fix python and python3 versions
+    - Update package descriptions
+  * debian/rules:
+    - Uses --buildsystem=pybuild for simplified file
+    - Override for new sphinx build with localhost proxy
+
+ -- Angel Abad <angel@debian.org>  Mon, 09 Feb 2015 14:33:49 +0100
+
+polib (1.0.5-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.5 (Closes: #754549)
+  * Update Vcs-Browser URL to cgit web frontend
+  * debian/copyright: Update debian/* years
+
+ -- Angel Abad <angel@debian.org>  Mon, 25 Aug 2014 09:08:42 +0200
+
+polib (1.0.4-1) unstable; urgency=medium
+
+  * Imported Upstream version 1.0.4
+  * debian/watch: Now use pipy url
+  * Bump Standards-Version to 3.9.5 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Wed, 19 Mar 2014 23:48:36 +0100
+
+polib (1.0.3-2) unstable; urgency=low
+
+  * debian/control: Switch python-sphinx to B-D again because it is needed
+    in the clean target. Thanks to Jakub Wilk (Closes: #700340)
+
+ -- Angel Abad <angel@debian.org>  Tue, 19 Feb 2013 11:13:07 +0100
+
+polib (1.0.3-1) unstable; urgency=low
+
+  * Imported Upstream version 1.0.3
+  * debian/control: Switch python-sphinx to B-D-I
+  * debian/patches/01_remove_unicode_error_files: Refresh patch
+
+ -- Angel Abad <angel@debian.org>  Sun, 10 Feb 2013 19:45:26 +0100
+
+polib (1.0.2-1) unstable; urgency=low
+
+  * Imported Upstream version 1.0.2
+
+ -- Angel Abad <angel@debian.org>  Tue, 23 Oct 2012 13:26:09 +0200
+
+polib (1.0.1-1) unstable; urgency=low
+
+  * Imported Upstream version 1.0.1
+  * Bump Standards-Version to 3.9.3 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Fri, 21 Sep 2012 14:04:58 +0200
+
+polib (1.0.0-2) unstable; urgency=low
+
+  * debian/copyright:
+    - Update upstream years
+    - Update format to copyright-format 1.0
+  * New package python-polib-doc with sphinx documentation
+
+ -- Angel Abad <angel@debian.org>  Wed, 20 Jun 2012 11:47:05 +0200
+
+polib (1.0.0-1) unstable; urgency=low
+
+  * Imported Upstream version 1.0.0
+  * Convert debian package to Git
+  * Bump Standards-Version to 3.9.3 (no changes)
+
+ -- Angel Abad <angel@debian.org>  Sat, 16 Jun 2012 10:16:25 +0200
+
+polib (0.7.0-2) unstable; urgency=low
+
+  * Add python3-polib binary package
+  * Run runtests.sh in package build
+  * debian/patches/01_remove_unicode_error_files:
+    - Remove files with unicode errors for python 3
+  * Bump Debhelper compat level to 8.
+  * Update my email address -> angel@debian.org
+  * debian/copyright:
+    - Update debian/* years
+    - Update format format for new specification
+  * debian/control: Remove DM-Upload-Allowed
+
+ -- Angel Abad <angel@debian.org>  Mon, 02 Jan 2012 15:57:38 +0100
+
+polib (0.7.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Angel Abad <angelabad@gmail.com>  Tue, 19 Jul 2011 15:40:40 +0200
+
+polib (0.6.3-2) unstable; urgency=low
+
+  * Team upload
+
+  [ Angel Abad ]
+  * debian/control: Remove python:Breaks
+
+  [ Scott Kitterman ]
+  * Rebuild for python transition
+  * Bump standards version to 3.9.2 without further change
+  * Clean up trailing whitespace in debian/control
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 01 May 2011 20:47:27 -0400
+
+polib (0.6.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Angel Abad <angelabad@gmail.com>  Sun, 20 Feb 2011 15:39:34 +0100
+
+polib (0.6.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Angel Abad <angelabad@gmail.com>  Sun, 13 Feb 2011 11:46:03 +0100
+
+polib (0.6.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Angel Abad <angelabad@gmail.com>  Thu, 10 Feb 2011 08:56:00 +0100
+
+polib (0.6.0-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/copyright: Update copyright years
+  * Switch to dh_python2
+    - debian/control:
+      + Remove python-support from B-D-I
+      + Bump minimun python-all version to 2.6.6-3
+      + Add Breaks: python:Breaks
+      + Add X-Python-Version: >= 2.5
+    - debian/rules
+      + Add --with python2 to rules
+    - debian/pyversions: Remove file
+
+ -- Angel Abad <angelabad@gmail.com>  Mon, 07 Feb 2011 16:35:39 +0100
+
+polib (0.5.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Angel Abad <angelabad@gmail.com>  Tue, 02 Nov 2010 14:45:57 +0100
+
+polib (0.5.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump Standards-Version to 3.9.1 (no changes)
+
+ -- Angel Abad <angelabad@gmail.com>  Thu, 02 Sep 2010 21:36:35 +0200
+
+polib (0.5.2-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/copyright:
+    - Update years
+    - Update download page
+  * Convert to source format 3.0 (quilt)
+  * Bump Standards-Version to 3.8.4 (no changes)
+
+ -- Angel Abad <angelabad@gmail.com>  Wed, 09 Jun 2010 10:02:16 +0200
+
+polib (0.5.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #535845)
+
+ -- Angel Abad <angelabad@gmail.com>  Fri, 01 Jan 2010 23:47:28 +0100

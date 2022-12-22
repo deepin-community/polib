@@ -1,0 +1,10 @@
+Document: polib
+Section: Programming/Python
+Title: Polib 
+Author: David Jean Louis <izimobil@gmail.com>
+Abstract: A Pythin library to manipulate, create, modify
+ gettext files (pot, po and mo files).
+
+Format: HTML
+Index: /usr/share/doc/python-polib-doc/html/index.html
+Files: /usr/share/doc/python-polib-doc/html/*.html

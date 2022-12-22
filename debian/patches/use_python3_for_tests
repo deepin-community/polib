@@ -1,0 +1,14 @@
+Description: Use python3 in test
+Author: Angel Abad <angel@debian.org>
+Forwarded: no
+Last-Updated: 2019-08-31
+
+--- polib/runtests.sh
++++ polib/runtests.sh
+@@ -3,5 +3,5 @@ if which coverage > /dev/null; then
+     coverage run tests/tests.py
+     coverage report
+ else
+-    /usr/bin/env python tests/tests.py
++    /usr/bin/env python3 tests/tests.py
+ fi
